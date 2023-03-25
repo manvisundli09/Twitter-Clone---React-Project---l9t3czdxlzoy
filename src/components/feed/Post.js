@@ -4,6 +4,7 @@ import { Avatar } from "@mui/material";
 import './Post.css';
 import { forwardRef } from 'react';
 import { Interweave } from "interweave";
+import {useState} from 'react';
 
 
 const Post = forwardRef(
@@ -32,6 +33,12 @@ if(timeStamp < 60){
     let date = new Date(props.tweet.timeStamp).getDate();
     displayTime = month[monthIndex] + " " + date;
 } 
+        
+const [isActive, setIsActive] = useState(false);
+const click = () => {
+    setIsActive(current => !current);
+  };
+      
        
     return (
     
@@ -61,7 +68,9 @@ if(timeStamp < 60){
 
                 <ChatBubbleOutline fontSize="small" />
                 <Repeat fontSize="small" />
-                <FavoriteBorder fontSize="small" />
+                <IconButton color="black" fontsize="small" onClick={click} style={{color: isActive ? 'red' : '',backgroundColor: isActive ? 'white' : '',}}>
+                    <FavoriteBorder/>
+                </IconButton>
                 <FileUploadOutlined fontSize="small" />
             </div>
         </div>
