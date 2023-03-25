@@ -4,7 +4,7 @@ import { Avatar } from "@mui/material";
 import './Post.css';
 import { forwardRef } from 'react';
 import { Interweave } from "interweave";
-import {useState} from 'react';
+//import {useState} from 'react';
 
 
 const Post = forwardRef(
@@ -34,10 +34,10 @@ if(timeStamp < 60){
     displayTime = month[monthIndex] + " " + date;
 }
         
-const [isActive, setIsActive] = useState(false);
+/*const [isActive, setIsActive] = useState(false);
 const click = () => {
     setIsActive(current => !current);
-  };
+  };*/
        
     return (
     
@@ -67,9 +67,9 @@ const click = () => {
 
                 <ChatBubbleOutline fontSize="small" />
                 <Repeat fontSize="small" />
-                <IconButton color="black" fontsize="small" onClick={click} style={{color: isActive ? 'red' : '',backgroundColor: isActive ? 'white' : '',}}>
-                    <FavoriteBorder/>
-                </IconButton>
+                //<IconButton color="black" fontsize="small" onClick={click} style={{color: isActive ? 'red' : '',backgroundColor: isActive ? 'white' : '',}}>
+                    <FavoriteBorder fontSize="small" />
+                //</IconButton>
                 <FileUploadOutlined fontSize="small" />
             </div>
         </div>
