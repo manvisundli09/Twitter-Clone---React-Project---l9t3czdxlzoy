@@ -8,12 +8,12 @@ import './Widgets.css';
 const Widgets = () => {
     // const tweet =
     // {
-    //     displayName: "Nahar Singh",
-    //     username: "naharSingh",
+    //     displayName: "Manvi Sundli",
+    //     username: "manvisundli",
     //     verified: true,
     //     timeStamp: "13h",
     //     message: "  I'm building my own twittter ",
-    //     avatar: "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png",
+    //     avatar: "https://www.goodmorningimagesdownload.com/wp-content/uploads/2022/03/Cute-Cartoon-DP.jpg",
     //     imageSource: "https://i.gifer.com/Okf.gif"
     // }
 
