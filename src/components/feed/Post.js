@@ -1,3 +1,4 @@
+
 import { BarChartOutlined, ChatBubbleOutline, FavoriteBorder, FileUploadOutlined, Repeat, Verified } from "@mui/icons-material";
 import { Avatar } from "@mui/material";
 import './Post.css';
