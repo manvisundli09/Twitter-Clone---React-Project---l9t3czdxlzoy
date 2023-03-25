@@ -42,7 +42,7 @@ const Feed = () => {
         <div className='feed'>
             {/* header */}
             <div className="feed__header">
-
+                <h1>Home</h1>
             </div>
             {/* tweet Box */}
             <TweetBox />
