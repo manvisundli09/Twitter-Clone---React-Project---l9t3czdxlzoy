@@ -1,10 +1,8 @@
-
 import { BarChartOutlined, ChatBubbleOutline, FavoriteBorder, FileUploadOutlined, Repeat, Verified } from "@mui/icons-material";
 import { Avatar } from "@mui/material";
 import './Post.css';
 import { forwardRef } from 'react';
 import { Interweave } from "interweave";
-
 
 
 const Post = forwardRef(
@@ -32,9 +30,8 @@ if(timeStamp < 60){
     const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     let date = new Date(props.tweet.timeStamp).getDate();
     displayTime = month[monthIndex] + " " + date;
-}
-        
- 
+} 
+       
     return (
     
     <div className="post" ref={ref}>
