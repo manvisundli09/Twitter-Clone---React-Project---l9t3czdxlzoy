@@ -47,6 +47,7 @@ const Feed = () => {
             {/* tweet Box */}
             <TweetBox />
             {/* Post */}
+            <Post />
             <FlipMove>
                 {sortedposts.map(post => (
                     <Post key={post.timeStamp}
