@@ -36,12 +36,12 @@ const TweetBox = () => {
             return;
         }
         db.collection('posts').add({
-            displayName: "Nahar Singh",
-            username: "naharSingh",
+            displayName: "Manvi Sundli",
+            username: "manvisundli",
             verified: true,
             timeStamp: new Date().valueOf(),
             message: tweetMessage,
-            avatar: "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png",
+            avatar: "https://www.goodmorningimagesdownload.com/wp-content/uploads/2022/03/Cute-Cartoon-DP.jpg",
             image: tweetImage.trim()
             // image: (tweetImage.trim().length === 0 ? "https://media.tenor.com/QeGBqkEiu6YAAAAC/yay-yayy.gif" : tweetImage.trim())
 
@@ -56,7 +56,7 @@ const TweetBox = () => {
         <div className="tweetBox">
             <form onSubmit={submitHandler}>
                 <div className="tweetBox__input">
-                    <Avatar src='https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png'
+                    <Avatar src='https://www.goodmorningimagesdownload.com/wp-content/uploads/2022/03/Cute-Cartoon-DP.jpg'
                     ></Avatar>
                     <input
                         onChange={onChangeHandler} value={tweetMessage} placeholder="What's happening?"
