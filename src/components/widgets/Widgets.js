@@ -4,7 +4,7 @@ import { TwitterTweetEmbed } from 'react-twitter-embed';
 import db from '../../firebase';
 import Post from '../feed/Post';
 import './Widgets.css';
-import { SearchResultsList } from "./SearchResultsList";
+import { SearchResultsList } from "./SearchResultsList.jsx";
 
 const Widgets = () => {
     // const tweet =
