@@ -48,7 +48,7 @@ const Widgets = () => {
         <div className="widgets">
             <div className="widgets__input">
                 <SearchOutlinedIcon className="widgets__searchIcon" setResults={setResults} />
-                <input placeholder="Search Twitter" type="text" value={input} 
+                <input placeholder="         Search Twitter" type="text" value={input} 
                 onChange={(e) => handleChange(e.target.value)}  />
                 {results && results.length > 0 && <SearchResultsList results={results} />}
             </div>
