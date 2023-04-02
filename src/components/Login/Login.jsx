@@ -30,7 +30,7 @@ const Login = () => {
   };
   return (
     <>
-      <div className="Login">
+      <div className="Login" id="background">
         <div className="logo-box">
           <div>
             <img src="./twitter.png" alt="apple" className="logo" />
