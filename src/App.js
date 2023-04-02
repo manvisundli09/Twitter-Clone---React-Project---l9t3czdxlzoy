@@ -60,7 +60,7 @@ const App = () => {
   return (
     <>
       <div className="app">
-        {location.pathname != "/login" ? <Sidebar /> : null}
+        {location.pathname !== "/login" ? <Sidebar /> : null}
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Feed />} />
@@ -81,7 +81,7 @@ const App = () => {
 
           <Route path="*" element={<Feed />} />
         </Routes>
-        {location.pathname != "/login" ? <Widgets /> : null}
+        {location.pathname !== "/login" ? <Widgets /> : null}
       </div>
     </>
   );
