@@ -21,7 +21,6 @@ const Login = () => {
     // For the purposes of this example, we'll assume that the username
     // and password are both "admin".
     if (username === "manvisundli98@gmail.com" && password === "admin") {
-      setLoggedIn(true);
       localStorage.setItem("isLoggedIn", "true");
       localStorage.setItem("username", username);
       navigate("/profile");
