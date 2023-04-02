@@ -1,12 +1,9 @@
 import "./Login.css";
 import React, { useState } from "react";
-import Twitter from "@mui/icons-material/Twitter";
-import { Google } from "@mui/icons-material";
 import { useNavigate } from "react-router";
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [logedin, setLoggedIn] = useState(false);
   const navigate = useNavigate();
 
   const handleUsernameChange = (event) => {
@@ -32,16 +29,6 @@ const Login = () => {
       alert("Invalid username or password");
     }
   };
-
-  const handleLogout = () => {
-    setLoggedIn(false);
-    localStorage.removeItem("isLoggedIn");
-    localStorage.removeItem("username");
-  };
-
-  // Check if the user is already logged in
-  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-
   return (
     <>
       <div className="Login">
