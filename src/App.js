@@ -36,14 +36,7 @@
 
 // export default App;
 
-import React, { useState, useEffect } from "react";
-import {
-  Routes,
-  Route,
-  Navigate,
-  useLocation,
-  useNavigate,
-} from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import Feed from "./components/feed/Feed";
 import "./App.css";
 import Sidebar from "./components/sidebar/Sidebar";
@@ -57,26 +50,7 @@ import Bookmarks from "./components/bookmarks/Bookmarks";
 import Login from "./components/Login/Login";
 
 const App = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
-
-  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
-
-  const handleLogin = () => {
-    setIsAuthenticated(true);
-  };
-
-  const handleLogout = () => {
-    setIsAuthenticated(false);
-  };
-
-  // useEffect(() => {
-  //   if (location.pathname == "/profile") {
-  //     console.log(location.pathname);
-  //     Navigate("/login");
-  //   }
-  // });
 
   const PrivateRoute = ({ children }) => {
     const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
@@ -111,10 +85,6 @@ const App = () => {
       </div>
     </>
   );
-};
-
-const ProtectedComponent = () => {
-  return <div>This is a protected component</div>;
 };
 
 export default App;
