@@ -1,4 +1,4 @@
 # Made with React JS, html , css
 
- [Hosted project url](https://twitter-clone-nahars001.netlify.app/)
+ [Hosted project URL](https://euphonious-frangipane-7b989c.netlify.app/home)
 
