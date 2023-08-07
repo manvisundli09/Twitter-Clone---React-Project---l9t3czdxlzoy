@@ -56,7 +56,7 @@ max-width: 600px;
     }
 
     .post__footer {
-        flex-direction: column; /* Stack footer elements vertically on small screens */
+        flex-direction: row; /* Stack footer elements vertically on small screens */
     }
 
     .post__avatar {
