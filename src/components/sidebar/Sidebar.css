@@ -27,8 +27,17 @@
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 680px){
-    .sidebar{
-        display: none;
+/* Responsive styles for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    .sidebar {
+        display: none; /* Hide the sidebar on small screens */
+    }
+}
+
+/* Responsive styles for tablets and larger devices */
+@media (min-width: 768px) {
+    .sidebar {
+        min-width: 150px; /* Adjust the width to a suitable value for tablets and larger screens */
+        padding: 10px; /* Adjust the padding for tablets and larger screens */
     }
 }

@@ -67,3 +67,26 @@
     padding: 10px;
     
 }
+
+/* Responsive styles for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    .tweetBox {
+      padding-right: 5px; /* Reduce padding for small screens */
+    }
+  
+    .tweetBox__input {
+      padding: 10px; /* Reduce padding for small screens */
+    }
+  
+    .tweetBox__input > input {
+      margin-left: 10px; /* Adjust the margin for small screens */
+      font-size: 14px; /* Adjust the font size for small screens */
+    }
+  
+    .tweetBox__tweetButton,
+    .tweetBox__tweetButton__disabled {
+      width: 70px; /* Adjust the button width for small screens */
+      height: 35px; /* Adjust the button height for small screens */
+      font-size: 14px; /* Adjust the font size for small screens */
+    }
+  }

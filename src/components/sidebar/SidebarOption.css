@@ -28,3 +28,15 @@
   text-decoration: none;
   color: black;
 }
+
+/* Responsive styles for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  .sidebarOption > h2 {
+    font-size: 18px; /* Adjust the font size for small screens */
+    margin-right: 15px; /* Adjust the margin for small screens */
+  }
+  
+  .sidebarOption > .css-i4bv87-MuiSvgIcon-root {
+    padding: 15px; /* Adjust the padding for small screens */
+  }
+}

@@ -9,3 +9,11 @@
     max-height: 300px;
     overflow-x: auto;
   }
+
+/* Responsive styles for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  .results-list {
+      max-height: none; /* Remove the max-height on small screens */
+      overflow-x: hidden; /* Disable horizontal scrolling on small screens */
+  }
+}

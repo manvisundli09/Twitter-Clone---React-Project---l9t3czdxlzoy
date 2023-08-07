@@ -11,3 +11,32 @@ body {
     margin-right: auto;
     padding: 0 10px;
 }
+
+/* For devices with a width of 600px or less (e.g., mobile phones) */
+@media (max-width: 600px) {
+    .app {
+        flex-direction: column; /* Stack items vertically */
+        padding: 0; /* Remove horizontal padding */
+    }
+}
+
+/* For devices with a width of 768px or less (e.g., tablets) */
+@media (max-width: 768px) {
+    .app {
+        padding: 0 20px; /* Add more horizontal padding */
+    }
+}
+
+/* For devices with a width of 1024px or less (e.g., small laptops) */
+@media (max-width: 1024px) {
+    .app {
+        max-width: 800px; /* Reduce the max width */
+    }
+}
+
+/* For devices with a width of 1440px or less (e.g., large laptops) */
+@media (max-width: 1440px) {
+    .app {
+        max-width: 1200px; /* Adjust the max width */
+    }
+}

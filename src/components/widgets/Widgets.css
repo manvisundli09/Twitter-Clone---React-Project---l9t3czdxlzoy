@@ -54,3 +54,30 @@
     font-size: 18px;
     font-weight: 800;
 }
+
+/* Responsive styles for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    .widgets {
+        flex: 1; /* Expand to full width on small screens */
+        min-width: 0; /* Allow the section to shrink on smaller screens */
+    }
+
+    .widgets__input {
+        flex-direction: row; /* Adjust flex direction for small screens */
+        justify-content: space-between; /* Space elements evenly for small screens */
+        padding: 8px 15px; /* Reduce padding for small screens */
+    }
+
+    .widgets__input > input {
+        flex: 1; /* Allow the input to take full width on small screens */
+        margin-left: 10px; /* Adjust the margin for small screens */
+    }
+
+    .widgets__widgetContainer {
+        margin-left: 15px; /* Adjust the margin for small screens */
+    }
+
+    .widgets__widgetContainer > h2 {
+        font-size: 16px; /* Adjust font size for small screens */
+    }
+}

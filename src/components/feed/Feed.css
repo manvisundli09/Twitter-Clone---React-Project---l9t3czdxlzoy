@@ -26,6 +26,21 @@
 .feed__header > h2{
     font-size: 20px;
     font-weight: 800;
-   
+}
 
+/* Responsive styles for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    .feed {
+        flex: 1; /* Expand to full width on small screens */
+        min-width: 0; /* Allow the section to shrink on smaller screens */
+        border-right: none; /* Remove the right border on small screens */
+        border-bottom: 1px solid var(--twitter-background); /* Add a bottom border instead */
+    }
+}
+
+/* Responsive styles for tablets and larger devices */
+@media (min-width: 768px) {
+    .feed {
+        flex: 0.4; /* Adjust the width to a suitable value for tablets and larger screens */
+    }
 }

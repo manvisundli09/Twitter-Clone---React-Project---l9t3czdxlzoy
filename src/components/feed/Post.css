@@ -45,3 +45,35 @@ max-width: 600px;
 .post__avatar{
     padding: 20px;
 }
+
+/* Responsive styles for all devices */
+/* Adjust the breakpoint value (e.g., 768px) according to your design needs */
+
+@media (max-width: 767px) {
+    .post {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        max-width: 100%; /* Allow the post to take the full width on small screens */
+    }
+
+    .post__footer {
+        flex-direction: column; /* Stack footer elements vertically on small screens */
+    }
+
+    .post__avatar {
+        padding: 10px; /* Reduce avatar padding on small screens */
+    }
+    
+    .post__body > img {
+        border-radius: 10px; /* Reduce the image border-radius on small screens */
+    }
+    
+    .post__hederText {
+        font-size: 14px; /* Reduce header text font size on small screens */
+    }
+
+    .verifiedIcon {
+        font-size: 12px !important; /* Reduce verified icon font size on small screens */
+    }
+}
+
+/* Additional media queries and styles for other devices can be added here as needed */

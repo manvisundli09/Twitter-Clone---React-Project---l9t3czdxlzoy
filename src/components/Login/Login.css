@@ -47,7 +47,7 @@
 .logo-box hr {
   border: 0;
   height: 1px;
-  background: #f4efef;
+  background: #d3d0d0;
   margin: 5px;
 }
 
@@ -95,3 +95,29 @@
 .welcome {
   color: #fff;
 }
+
+/* Responsive styles for all devices */
+/* Adjust the breakpoint value (e.g., 768px) according to your design needs */
+
+@media (max-width: 767px) {
+  .logo-box {
+    width: 90%; /* Adjust the width for smaller screens */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .logo-box p a {
+    margin-left: 0; /* Center the link on smaller screens */
+    display: block; /* Make the link full width on smaller screens */
+    text-align: center; /* Center the link text on smaller screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .logo-box {
+    width: 450px; /* Restore the original width for tablets and larger screens */
+    padding: 30px 120px; /* Restore the original padding for tablets and larger screens */
+  }
+}
+
+/* Additional media queries and styles for other devices can be added here as needed */
+
