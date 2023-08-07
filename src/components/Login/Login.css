@@ -1,9 +1,16 @@
-.Login {
+.Login{
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+
+body #background{
+  background: url("https://images8.alphacoders.com/473/thumb-1920-473471.jpg");
+  background-size: cover;
+  background-color: #359cf0;
+}
+
 .logo-box {
   background: #fff;
   padding: 30px 120px;
